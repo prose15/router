@@ -1,10 +1,17 @@
 import React from 'react'
+import { Feed } from './Feed'
+import { Post } from './Post'
 
-export const Home = () => {
+export const Home = ({content}) => {
   return (
-
-    <h1>
-        Home
-    </h1>
+    <main>
+     {
+      content.length ? (
+      <Post content={content}/>
+      ) : (
+           <p>No songs to display.
+           </p>
+      )}
+    </main>
   )
 }
