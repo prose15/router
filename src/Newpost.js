@@ -10,10 +10,15 @@ export const Newpost = ({content,handleDelete}) => {
         {
           contents && 
           <>
-            <h2>{content.topic}</h2>
-            <p>{content.body}</p>
-            <button 
-              onClick={()=> handleDelete(content.id)}>
+            <h2>{contents.topic}</h2>
+            <p>{contents.body}</p>
+            <Link to={`/edit/${contents.id}`}><button className="btn btn-outline-dark m-3">
+              Edit post
+            </button>
+            </Link>
+            
+            <button className="btn btn-danger"
+              onClick={()=> handleDelete(contents.id)}>
               Delete post
             </button>
           </>
@@ -25,9 +30,9 @@ export const Newpost = ({content,handleDelete}) => {
             <p>Oops, its not working</p>
             <p>
               <Link to = '/'>
-              Visit our home homepage
-              bla bla
-              </Link>
+                Visit our home homepage
+                bla bla
+              </Link>  
             </p>
           </>
         }

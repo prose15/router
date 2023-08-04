@@ -11,21 +11,21 @@ export const Nav = ({search,setSearch}) => {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <Link to="/" class="nav-link active" aria-current="page" href="#">
+          <Link to="/" class="nav-link active" aria-current="page" href="/">
             Home
           </Link>
         </li>
         <li class="nav-item">
-          <Link to="/about" class="nav-link" href="#">
+          <Link to="/about" class="nav-link" href="/">
             About
           </Link>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Postpage
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><Link to= "/postpage" class="dropdown-item" href="#">NEW POST</Link></li>
+            <li><Link to= "/postpage" class="dropdown-item" href="/">NEW POST</Link></li>
           </ul>
         </li>
       </ul>

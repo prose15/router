@@ -1,12 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import './index.css';
 
 export const Postpage = ({newSongTitle,setNewSongTitle,newSongBody,setNewSongBody,handlesubmit}) => {
   return (
     <div className='form' onSubmit={handlesubmit}>
         <h2>Add your new medicine</h2>
-        <form className='newsong'>
+        <form className='newsong'>         
           <input
           className='songtitle'
           required
